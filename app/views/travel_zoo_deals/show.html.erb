@@ -1,0 +1,16 @@
+<table>
+  <tr>
+  <%= TravelZooDeal.attributes.each do |a| %>
+    <th><%= a %></th>
+  <% end %>
+  </tr>
+
+  <%= @deals.each do |deal| %>
+    <tr>
+    <%= deal.attributes.each do |attr, value| %>
+      <td><%= value %></td>
+    <% end %>
+    </tr>
+  <% end %>
+
+</table>

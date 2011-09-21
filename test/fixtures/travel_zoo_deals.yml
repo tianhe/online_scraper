@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  url: MyString
+  expired: false
+  quantity_sold: 1
+  offer_price: 1
+  full_price: 1
+  limit_reached: false
+  expiration: 2011-09-20 22:41:30
+  effective_date: 2011-09-20 22:41:30
+
+two:
+  url: MyString
+  expired: false
+  quantity_sold: 1
+  offer_price: 1
+  full_price: 1
+  limit_reached: false
+  expiration: 2011-09-20 22:41:30
+  effective_date: 2011-09-20 22:41:30
