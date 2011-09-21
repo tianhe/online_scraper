@@ -1,13 +1,13 @@
 <table>
   <tr>
-  <%= TravelZooDeal.attributes.each do |a| %>
+  <% TravelZooDeal.attribute_names.each do |a| -%>
     <th><%= a %></th>
   <% end %>
   </tr>
 
-  <%= @deals.each do |deal| %>
+  <% @deals.each do |deal| %>
     <tr>
-    <%= deal.attributes.each do |attr, value| %>
+    <% deal.attributes.values.each do |value| %>
       <td><%= value %></td>
     <% end %>
     </tr>

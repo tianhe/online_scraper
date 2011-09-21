@@ -45,7 +45,7 @@ class TravelZooDeal < ActiveRecord::Base
     deal_params[:limit_reached] = !doc.search("//span[@id='ctl00_Main_LabelCapReached']").empty?
     deal_params[:expiration_date] =
         expired_tag.inner_html.gsub(/\./,'').split(" ")[-2, 2].join(" ") if expired_tag
-    deal_params[:effective_date] = Time.zone.now
+    deal_params[:effective_date] = Date.current
 
     TravelZooDeal.create(deal_params)
   end

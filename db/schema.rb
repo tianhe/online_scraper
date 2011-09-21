@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(:version => 20110921024406) do
     t.integer  "offer_price"
     t.integer  "full_price"
     t.boolean  "limit_reached"
-    t.datetime "expiration_date"
-    t.datetime "effective_date"
+    t.date     "expiration_date"
+    t.date     "effective_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

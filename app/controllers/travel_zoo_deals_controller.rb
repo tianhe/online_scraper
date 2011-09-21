@@ -4,6 +4,6 @@ class TravelZooDealsController < ApplicationController
   end
 
   def show
-    @deals = TravelZooDeal.where(:effective_date => params[:date])
+    @deals = TravelZooDeal.where(:effective_date => params[:id])
   end
 end
